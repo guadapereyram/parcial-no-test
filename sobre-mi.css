@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #706f6f;
+}
+
+a {
+    color: inherit; /* Hereda el color del texto del body */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+header {
+    position: fixed; /* Queda fijo al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Bien arriba de todo */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    padding: 20px 50px;
+    background-color: white;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Alto del difuminado */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+    pointer-events: none;
+}
+
+img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+main {
+    padding: 120px 50px 50px; /* Espacio arriba (por el header fijo) y a los costados */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+section {
+    padding: 40px 20px;
+    background: #f5f5f5;
+  }
+  
+  .contenedor-sobre-mi {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #C39AC7;
+  }
+  
+  .info-principal h1 {
+    font-size: 32px;
+  }
+  
+  .info-principal p {
+    font-size: 20px;
+    color: #777;
+  }
+  
+  .boton-linkedin {
+    margin-top: 10px;
+    display: inline-block;
+    background: linear-gradient(135deg, #C3D9AE, #AEDDF0); /* Degradado */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* un borde más redondeado para que luzca más lindo */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .boton-linkedin:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: white; /* Texto blanco en las cards */
+  }
+  
+  /* Colores personalizados para cada card */
+  .card-rosa {
+    background-color: #C39AC7;
+  }
+  
+  .card-celeste {
+    background-color: #B1DDEC;
+    color: #999999;
+  }
+  
+  .card-lila {
+    background-color: #C1C4E4;
+  }
+  
+  .card-azul {
+    background-color: #A6B8E2; /* Un azul suave que reemplaza al verde */
+  }
+  
+  .card h2 {
+    margin-bottom: 15px;
+  }
+  
+  .card ul {
+    padding-left: 20px;
+  }
+  
+  .card ul li {
+    margin-bottom: 10px;
+  }
+  
+
+
+
+
+footer {
+    background-color: #C3D9AE;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-left img {
+    height: 20px; /* Ajustá el tamaño que quieras */
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-right a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white
+  }
+  
+  .footer-right img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+

@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #706f6f;
+}
+
+a {
+    color: inherit; /* Hereda el color del texto del body */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+header {
+    position: fixed; /* Queda fijo al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Bien arriba de todo */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    padding: 20px 50px;
+    background-color: white;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Alto del difuminado */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+    pointer-events: none;
+}
+
+img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+main {
+    margin-top: 100px; /* o lo que mida tu header */
+}
+
+
+/*SECCION UNO 1 */
+  .portada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+    gap: 40px;
+  }
+  
+  .texto-portada {
+    flex: 1;
+  }
+  
+  .texto-portada h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .texto-portada p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  .foto-portada {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .foto-portada img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; /* bordes redondeados suaves */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* sutil sombra */
+  }
+  
+/*SECCION DOS 2*/
+.materias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 50px;
+}
+
+/* Estilos de la tabla */
+.tabla-materias {
+    flex: 1;
+    overflow-x: auto;
+}
+
+.tabla-materias table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.tabla-materias th,
+.tabla-materias td {
+    border: 1px solid #ddd;
+    padding: 20px; 
+    text-align: center;
+}
+
+.tabla-materias th {
+    background-color: #C39AC7; /* Color sólido en todo el encabezado */
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+.tabla-materias tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos del texto */
+.texto-materias {
+    flex: 1;
+}
+
+.texto-materias h2 {
+    font-size: 28px;
+    margin: 80px 0 20px 0;
+}
+
+.texto-materias p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+
+
+footer {
+    background-color: #C3D9AE;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-left img {
+    height: 20px; /* Ajustá el tamaño que quieras */
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-right a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-right img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+

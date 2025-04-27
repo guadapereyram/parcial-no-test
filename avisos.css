@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #706f6f;
+}
+
+a {
+    color: inherit; /* Hereda el color del texto del body */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+header {
+    position: fixed; /* Queda fijo al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Bien arriba de todo */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    padding: 20px 50px;
+    background-color: white;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Alto del difuminado */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+    pointer-events: none;
+}
+
+img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+main {
+    padding: 120px 50px 50px; /* Espacio arriba (por el header fijo) y a los costados */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.contenedor-materias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.materia {
+    background: #C39AC7; /* Color por defecto, se sobrescribe más abajo */
+    border-radius: 12px;
+    padding: 25px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.materia:nth-child(1) {
+    background: #C39AC7;
+}
+
+.materia:nth-child(2) {
+    background: #B1DDEC;
+}
+
+.materia:nth-child(3) {
+    background: #D1C4E9; /* cambiamos el verde por lavanda pastel */
+}
+
+.materia:nth-child(4) {
+    background: #C1C4E4;
+}
+
+.materia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.materia h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.materia ul {
+    list-style: disc inside;
+}
+
+.materia ul li {
+    margin-bottom: 12px;
+    line-height: 1.6; /* Más espacio entre las líneas del mismo bullet */
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#texto-h1 {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+footer {
+    background-color: #C3D9AE;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-left img {
+    height: 20px; /* Ajustá el tamaño que quieras */
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-right a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-right img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+
